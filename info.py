@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ""))
-API_HASH = environ.get('API_HASH', "")
+API_ID = int(environ.get('API_ID', "29761749"))
+API_HASH = environ.get('API_HASH', "a18b40e995d5b74ec633a0cfdfa8e175")
 BOT_TOKEN = environ.get('BOT_TOKEN', "7121730083:IZywWw2UeuN-9ElCqIbm_II")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
@@ -45,17 +45,17 @@ SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 3))
 LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5069888600').split()]
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Safaridev") # widout 👉 @
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002101778109').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1997617981').split()]
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "movies4uhd") # widout 👉 @
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002485029394').split()]
 # post channel auto post new movie
-POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1001998895377').split(','))))
+POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002809601330').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://J0.t0gdpgn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anant:Anant@movieforu.09ibn.mongodb.net/?retryWrites=true&w=majority&appName=Movieforu")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Safaribotts')
 
